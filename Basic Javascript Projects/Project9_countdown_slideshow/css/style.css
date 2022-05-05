@@ -25,6 +25,10 @@
   display: none;
 }
 
+img {
+    vertical-align: middle;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -61,7 +65,7 @@
   bottom: 8px;
   width: 100%;
   text-align: center;
-  text-shadow: black 3px;
+  text-shadow: 5px 5px 5px black ;
 }
 
 /* Number text (1/3 etc) */
