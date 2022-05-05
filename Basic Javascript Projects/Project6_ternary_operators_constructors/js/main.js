@@ -16,7 +16,8 @@ var Jack = new Vehicle("Dodge","Viper",2020,"Red"); //here, we are defining diff
 var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
 var Erik = new Vehicle("Ford","Pinto", 1971, "Mustard");
 function myfunction(){
-    document.getElementById("keywordsandconstructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored" + Erik.Vehicle_Model + " manufactured in " Erik.Vehicle_Year;
+    document.getElementById("keywordsandconstructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " 
+     Erik.Vehicle_Year;
 }
 
 function nested(){ //in this function, we are nesting two additional functions. When the initial function, nested is called, it identifies an element in our HTML and executes the first nested function count(), which prints in the designated element. The innermost function, plusone, adds the value of one to the starting variable we defined.
