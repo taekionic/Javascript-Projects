@@ -1,18 +1,3 @@
-function countdown() {
-    var seconds = document.getElementById("seconds").value; //referencing input from our input box
-
-    function tick() {
-        seconds = seconds - 1;
-        timer.innerHTML = seconds;
-        var time = setTimeout(tick, 1000); //setting a ticker to the value of 1000 ms, or 1 second. 
-        if (seconds == -1) { //defining an if function that will return the alert "times up" if our ticker attempts to count below 0
-            alert("Time's up!");
-            clearTimeout(time); //resets our timer
-            timer.innerHTML = "";
-        }
-    }
-    tick();
-}
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -41,4 +26,20 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+function countdown() {
+    var seconds = document.getElementById("seconds").value; //referencing input from our input box
+
+    function tick() {
+        seconds = seconds - 1;
+        timer.innerHTML = seconds;
+        var time = setTimeout(tick, 1000); //setting a ticker to the value of 1000 ms, or 1 second. 
+        if (seconds == -1) { //defining an if function that will return the alert "times up" if our ticker attempts to count below 0
+            alert("Time's up!");
+            clearTimeout(time); //resets our timer
+            timer.innerHTML = "";
+        }
+    }
+    tick();
 }
