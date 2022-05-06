@@ -1,9 +1,9 @@
 function call_loop() {
     var Digit = "";
     var x = 0;
-    while (x <11) {
+    while (x <11) { //here, our loop will execute while x is less than 11, and begins at 0. Thus, the output will be a count of 0-10. while loops allow us to execute a function WHILE certain conditions are true - here, if x is less than 11.
         Digit += "<br>" + x;
-        x++
+        x++;
     }
     document.getElementById("loop").innerHTML = Digit;
     
@@ -11,7 +11,7 @@ function call_loop() {
 
 function textlength() {
     let text = "hello world"
-    let length = text.length;
+    let length = text.length; //here we are defining the length as the amount of characters in our "test" variable.
     document.getElementById("test1").innerHTML = text;
     document.getElementById("test2").innerHTML = length;
 }
@@ -19,7 +19,7 @@ function textlength() {
 var Instruments = ["guiter","drums","piano","bass","violin","trumpet","flute"];
 var Content = "";
 var y;
-function for_loop() {
+function for_loop() { //for loops allow us to execute a function a set number of time until a specific condition is met. Here, until y is equal to the length of our instrument variable object - which is 7 instruments.
     for (y = 0; y < Instruments.length; y++) {
         Content += Instruments[y] + "<br>";
     }
@@ -48,7 +48,7 @@ function let_function() {
     var x = 25;
     {
         let x = 236;
-        document.write(x);
+        document.write(x); //var identifiers can be adjusted anywhere in the code - let statements allow us to define a variable locally in our block. 
         "<br>"
     }
     document.write(x);
@@ -58,19 +58,19 @@ function returntest() {
     var x = myFunction(4,12);
     document.getElementById("return").innerHTML = x;
     function myFunction(a,b) {
-        return a*b;
+        return a*b; //return stops the execution of a function and returns a specified output.
 
     }
 }
 
-function objectmethod() {
+function objectmethod() { //here we are defining an object with properties.
     let car = {
         make: "Dodge ",
         model: "Viper ",
         year: "2021 ",
         color: "red ",
-        description : function() {
-            return "The car is a " + this.year + this.color + this.make + this.model;
+        description : function() { //the description serves as our 'method.' It returns an output of specified properties of our object.
+            return "The car is a " + this.year + this.color + this.make + this.model; //this refers to the object.
         }
     };
     document.getElementById("car_object").innerHTML = car.description();
@@ -95,6 +95,6 @@ function continuetest() {
         }
         document.getElementById("continue").innerHTML = i;
     }
-      
+    
 }
 
