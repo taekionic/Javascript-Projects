@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript Projects</title>
+        <script src="./js/Javascript_1.js"></script>
+    </head>
+    <body>
+        <div style="margin:auto; text-align:center;">
+            <h1>What is your favorite animal?</h1>
+            <h3>Pick your favorite animal from the list below:</h3>
+            <ul style="list-style:none;">
+                <li>Dogs</li>
+                <li>Cats</li>
+                <li>Frogs</li>
+                <li>Horses</li>
+                <li>Pigs</li>
+            </ul>
+            <h3>Enter your choice below!</h3>
+            <input id="animals" type="text">
+            <button onclick="animalfunction()">Submit answer</button>
+            <p id="result"></p>
+            <br>
+            <br>
+            <h1 class="click">This text will change!</h1>
+            <h3 class="click">This text will not change.</h3>
+            <button onclick="textchange()">Click to test!</button>
+            <br>
+            <br>
+            <div style="display:inline-grid;">
+                <canvas id="canvastest" width="500" height = "500" 
+                        style="border:5px solid black;"></canvas>
+                        <br>
+                    <button style="width:150px; margin:auto;" onclick="canvasdrawtest()">Click to draw a circle!</button>
+                        <br>
+                <canvas id="gradienttest" width="500" height = "500" 
+                        style="border:5px solid black;"></canvas>
+                        <br>
+                    <button style="width:150px; margin:auto;" onclick="canvasgradient()">Click to see a gradient!</button>
+                        <br>
+            </div>
+        </div>
+       
+       
+        
+     
+    </body>
+
+</html>

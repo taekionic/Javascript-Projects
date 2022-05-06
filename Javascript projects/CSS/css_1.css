@@ -1,0 +1,29 @@
+.container {
+    border: 2px solid black;
+    margin: auto;
+    padding: 25px 0;
+    width: 400px;
+}
+
+.form {
+    display:table;
+    line-height:10px;
+    
+    
+}
+
+.table {
+    display:table-row;
+}
+
+.cell {
+    display:table-cell;
+    text-align: left;
+}
+
+form input[type="submit"] {
+    display:inline-block;
+    margin:0 auto;
+    transform: translatex(150%);
+    
+}
