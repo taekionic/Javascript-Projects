@@ -217,7 +217,7 @@ function resetGame() {
     //This for loop iterates through each gtml square element
     for (let i = 0; i < 9; i++) {
         //this variable gets the html element of i
-        let square = document.getElementById(String(i))
+        let square = document.getElementById(String(i));
         // this removes our elements background image
         square.style.backgroundImage = ''
     }
