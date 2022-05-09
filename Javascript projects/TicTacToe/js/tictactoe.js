@@ -101,8 +101,8 @@ function checkWinConditions() {
     else if (selectedSquares.length >=9) {
         //This function plays the tie game sound.
         audio('./media/tie.mp3');
-        // This function sets a .3 second timer before the resetGame is called
-        setTimeout(function() { resetGame(); }, 1000);
+        // This function sets a .5 second timer before the resetGame is called
+        setTimeout(function() { resetGame(); }, 500);
     }
 
     // This function checks if an array includes 3 strings. It is used to check for each win condition.
@@ -123,7 +123,7 @@ function disableClick() {
     //This makes our body unclickable.
     body.style.pointerEvents = 'none';
     //This makes our body clickable again after 1 second.
-    setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
+    setTimeout(function() { body.style.pointerEvents = 'auto';}, 1000);
 }
 
 //This function takes a string parameter of the path you set earlier for placement sound './media/place.mp3'
@@ -217,9 +217,9 @@ function resetGame() {
     //This for loop iterates through each gtml square element
     for (let i = 0; i < 9; i++) {
         //this variable gets the html element of i
-        let square = document.getElementById(string(i))
+        let square = document.getElementById(String(i))
         // this removes our elements background image
-        square.style.backgroundImage = ' '
+        square.style.backgroundImage = ''
     }
     //This resets our array so it is empty and we can start over
     selectedSquares = [];
