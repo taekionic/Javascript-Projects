@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e33d3d;
+    height: 100vh;
+}
+
+nav {
+    z-index: 25;
+    width: 98.75vw;
+    border: 3px solid black;
+    box-shadow: 0 2px 15px rgba(71, 120, 120, 0.5);
+    height: 15vh;
+    background-image: url(https://thumbs.dreamstime.com/b/pieces-pizza-different-various-types-banner-old-retro-boards-still-life-concept-closeup-129819511.jpg);
+    background-position: fixed;
+    background-size:30vw 15vh;
+    border-radius: 20px;
+    
+}
+
+nav ul {
+    height: 87.5%;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;  
+    opacity: .95;  
+}
+
+.nav {
+    z-index: 26;
+    background-color: white;
+    height: 62.5%;
+    width:7.5%;
+    list-style: none;
+    color: #eb4034;
+    text-align:center;
+    padding: 5px;
+    overflow:hidden;
+    border-radius: 5px;
+    margin: auto 5px;
+    box-shadow: 0 2px 15px rgba(71, 120, 120, 0.5);
+}
+
+h5 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 3vh;
+    text-shadow:10px rgba(71, 120, 120, 0.5);
+}
+
+h1 {
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    font-family: Georgia, serif;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline 2px;
+}
+
+div {
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+}
+
+h3 {
+    padding-top: 15px;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    margin-bottom: 10px;
+    text-decoration:underline 2px;
+    text-decoration-color: #eb4034 ;
+
+}
+
+#order {
+    background-color: black;
+    color: white;
+    opacity: .85;
+    width: 375px;
+    display:table-cell;
+    text-align: left;
+    line-height:25px;
+    padding: 0px;
+    float: left;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+#order:hover {
+    opacity: 1;
+    transform: scalex(1.05);
+    background-color:#eb4034;
+}
+
+.pizzasize {
+    
+    width: 100%;
+}
+.container {
+    background-color: white;
+    width: 1484px;;
+    height: 100%;
+    z-index: 10;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px black;
+    
+}
+
+#menuBG {
+    width: 400px;
+    height: auto;
+    margin: 10px 25px  ;
+    float: right;
+}
+
+#frmMenu {
+    width: auto;
+    height: auto;
+    background-color: gray;
+    opacity: .75;
+    border-radius: 20px;
+    
+    
+}
+
+#totalPrice {
+    width:200px;
+    height:190px;
+    margin: 0 auto;
+    
+}
+
+.menu-size {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    /*border-top: 2px solid black;*/
+
+    
+}
+
+.toppings {
+    text-align: center;
+}
+
+.table {
+    display:table-row;
+    line-height: 4px;
+    padding: 0px;
+    border: 2px solid black;
+}
+
+.cell {
+    display:table-cell;
+    line-height:25px;
+    border: 2px solid black;
+    padding: 0px;
+    float: left;
+    width: 175px;
+    margin-left: 10px;
+    background-color: black;
+    color: white; 
+    text-align: left;
+    opacity: .8;
+}
+
+.cell:hover { 
+    opacity: 1;
+    transform: scalex(1.05);
+    background-color:#eb4034;
+}
+
+ input:checked::after  {
+    background-color:#eb4034;
+
+    
+}
+
+
+.menu-left {
+    width: 200px;
+    height: 250px;
+    float: left;
+    border-top: 2px solid black;
+    
+}
+
+.menu-right {
+    width: 200px;
+    height: 250px;
+    float: right;
+    border-top: 2px solid black;
+    
+}
+
+#cart {
+    
+    
+    width: 400px;
+    height: 200px;
+    text-align:center;
+    margin-top: 235px;
+    border-top: 2px solid black;
+}
+
+
+#showText {
+    width: 200px;
+    height:190px;
+    margin: auto;
+    float: left;
+    overflow:hidden;
+}
+
+#totalPrice {
+    width: 200px;
+    height:190px;
+    margin: auto;
+    float: right;
+}
+
+.order {
+    display: block;
+    padding-left: 150px;
+    padding-bottom: 10px;
+}
+#btnOrder {
+    width: 100px;
+    height: 40px;
+}
+
+#information {
+    width: 100%;
+    margin: 50px;
+    display: grid;
+    grid-template-areas:
+                "one one one one"
+                "two two three three"
+                "two two three three"
+                ;
+}
+
+.pizzabanners {
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.slideshow-container {
+    max-width: 927px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+.banner {
+    grid-area: one;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little transparency */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.aboutus {
+    grid-area: two;
+    border-right: 2px solid black;
+    width: 600px;
+}
+
+.vision {
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.awards {
+    grid-area: three;
+    width: 333px;
+    margin-left: 10px;
+}
+
+.showcase {
+    height: 100px;
+    width: 333px;
+}
+
+.chef {
+    width: 333px;
+    height: 300px;
+}

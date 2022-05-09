@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza Drill Demo</title>
+        <meta HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+        <script src="./js/pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="./css/pizza.css">
+    </head>
+    <body>
+        <!--This is our Nav Bar-->
+        <div>
+            <nav>
+                <ul>
+                    <a class="nav"><h5>Home</h5></a>
+                    <a class="nav" onclick="myFunction()"><h5>Order</h5></a>
+                    <a class="nav"><h5>Our Story</h5></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+                <div id="menuBG">
+                    <h1>&nbsp;Pizzas R' Us&nbsp;</h1>
+                    <form class="hide" id="frmMenu">
+                        <div class="menu-size">
+                            <h3>Size:</h3>
+                            <div class="pizzasize">
+                                <p id="order" class="table"><label ><input class="size" type="radio" name="Size" value="Personal Pizza">&nbsp;&nbsp;Personal Pizza</label></p>
+                                <p id="order" class="table"><label ><input class="size" type="radio" name="Size" value="Small Pizza">&nbsp;&nbsp;Small Pizza</label></p>
+                                <p id="order" class="table"><label ><input class="size" type="radio" name="Size" value="Medium Pizza">&nbsp;&nbsp;Medium Pizza</label></p>
+                                <p id="order" class="table"><label ><input class="size" type="radio" name="Size" value="Large Pizza">&nbsp;&nbsp;Large Pizza</label></p>
+                                <p id="order" class="table"><label ><input class="size" type="radio" name="Size" value="Extra Large Pizza">&nbsp;&nbsp;Extra Large Pizza</label></p>
+                            </div>
+                        </div>
+                        <div class="toppings">
+                            <div class="menu-left">
+                                <h3>Meats:</h3>
+                                <div class="pizzasize">
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Pepperoni">&nbsp;&nbsp;Pepperoni</label></p>
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Sausage">&nbsp;&nbsp;Sausage</label></p>
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon">&nbsp;&nbsp;Canadian Bacon</label></p>
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Ground Beef">&nbsp;&nbsp;Ground Beef</label></p>
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Anchovy">&nbsp;&nbsp;Anchovy</label></p>
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Chicken">&nbsp;&nbsp;Chicken</label></p>
+                                </div>
+                            </div>
+                            <div class="menu-right">
+                                <h3>Veggies:</h3>
+                                <div class="pizzasize">
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Green Pepper">&nbsp;&nbsp;Green Pepper</label></p>
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Onions">&nbsp;&nbsp;Onions</label></p>
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Spinach">&nbsp;&nbsp;Spinach</label></p>
+                                    <p class="table"><label class="cell"><input class="toppings" type="checkbox" name="Topping" value="Pineapple">&nbsp;&nbsp;Pineapple</label></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cart">
+                            <div id="showText"></div>
+                            <div id="totalPrice"></div>
+                        </div>
+                        <div class="order">
+                            <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+                <div id="information">
+                    <div class="banner">
+                        <div class="slideshow-container">
+
+                            <!-- Full-width images with number and captions-->
+                            <div class="mySlides fade">
+                            <img class="pizzabanners" src="https://cdn.shopify.com/s/files/1/2662/4036/files/Fontana-Forni-Pizza-Banner_2048x.jpg?v=1525707123" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides fade">
+                            <img class="pizzabanners" src="https://external-preview.redd.it/mfOQ0eUPj3SldsPGqHDsSfhCpo-uHTPpJfXVEpEu5z0.jpg?auto=webp&s=2e358d7534e3b1ef9912e2f51ea71e85c092510f" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides fade">
+                            <img class="pizzabanners" src="https://previews.123rf.com/images/yesphotographers/yesphotographers2005/yesphotographers200500095/146916568-faire-une-banni%C3%A8re-de-pizza-au-pepperoni-avec-de-la-pizza-et-des-ingr%C3%A9dients-non-cuits-et-les-alimen.jpg" style="width:100%">
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                        </div>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="aboutus">
+                        <h1>&nbsp; Our Vision&nbsp; </h1>
+                        <p class="vision">We've all had Pizza, so we all know that there us such a thing as bad Pizza. That's why we care so much.
+                            Using quality, fresh ingredients sourced daily from local markets, we strive to deliver an experience like no other.
+                            <br>
+                            <br>
+                            We prepare every ingredient to order 
+                            before sliding it into our traditional brick-oven, cooking it slowly over the open 
+                            flame until it's the perfect temperature. 
+                            <br>
+                            <br>
+                            Our chefs were born and raised in Italy, two brothers - sons of a father who has spent his entire life perfecting his craft.
+                            Collectively, we have over 80 years of Pizza making experience in our small team. That's how we know we've got something special.
+                            <br>
+                            <br>
+                            We don't send out a pizza unless we are proud of it, and we aim to satisfy
+                            every guest. We promise the best Pizza in New York, and we're so confident in our Kitchen Team that we back our food with
+                            the Pizzas R' Us promise. If you aren't 100% satisfied, we'll give you your money back and even throw in a free pie, on us.
+                            <br>
+                            <br>
+                            Really.
+                        </p>
+                    </div>
+                    <div class="awards">
+                        <img class="showcase" src="https://www.verochiropractic.com/wp-content/uploads/2020/04/As-Featured-In-Major-Media-Marketing-Image.png">
+                        <br>
+                        <br>
+                        <br>
+                        <img class="chef" src="https://i.pinimg.com/originals/24/01/3f/24013f1a99319c9c19b377d6d43da27a.png">
+
+                    </div>
+                </div>      
+        </div>
+        
+    </body>
+
+</html>
