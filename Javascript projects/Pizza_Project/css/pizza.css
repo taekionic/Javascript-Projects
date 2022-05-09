@@ -119,6 +119,7 @@ h3 {
     height: auto;
     margin: 10px 25px  ;
     float: right;
+    display: none;
 }
 
 #frmMenu {
