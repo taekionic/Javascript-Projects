@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        $(document).ready(function() {
+            $("html").append( //appending the object document with defined content. $ is essentially shorthand for 'jQuery' and signifies that you are referencing a jQuery library.
+                "<body>\
+                    <div id='container'>\ 
+                        <div id='inner'?>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            ); // \ denotes next line
+            $("#2").css({"color":"red"}); //setting the color for the element with id '2' to the color red
+            $("#3").click(function(){ //adding a click event to id's '1' and '3' to either hide or show the header element.
+                $('h1').hide();
+            });
+            $("#1").click(function(){
+                $('h1').show();
+            });
+        });
+    </script>
+
+</html>
